@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1b1a17"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Logo Aplikasi -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="121dp"
+        android:layout_height="123dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/logo_jajanan" />
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_username"
+        android:textColorHint="#c5c3c0"
+        android:drawableLeft="@drawable/ic_person"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="10dp"
+        android:inputType="text"/>
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_password"
+        android:textColorHint="#c5c3c0"
+        android:layout_marginHorizontal="10dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPassword"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <!-- Button Login -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:text="@string/login"
+        android:background="#FF5733"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Register Link -->
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:focusable="true"/>
+
+</LinearLayout>
